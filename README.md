@@ -8,7 +8,7 @@ A redux-form checkbox group.
 
 Create a normal checkbox group
 
-```
+```js
 
 let options = [
   {label: 'Monday', value: 'monday'},
@@ -27,7 +27,7 @@ let options = [
 Create a checkbox group with a custom component (a bootstrap example)
 
 
-```
+```js
 
 const bootstrapParser = ({input, label}) => (
     <div className="checkbox">
