@@ -12,8 +12,7 @@ export default class CheckboxGroup extends React.Component {
         </label>
     );
 
-    handleChange = ({input, value}) => (event) => {
-        const {onChange, onBlur} = input;
+    handleChange = ({input, input: {onChange, onBlur}, value}) => (event) => {
         const inputValue = input.value;
         const arr = [...inputValue];
         if (event.target.checked) {
@@ -28,7 +27,7 @@ export default class CheckboxGroup extends React.Component {
 
     field = ({input, meta, options}) => {
 
-        const {name, onFocus, onBlur} = input;
+        const {name, onFocus} = input;
         const { component = this.item } = this.props;
         const inputValue = input.value;
 
