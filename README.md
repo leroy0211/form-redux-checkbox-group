@@ -101,6 +101,4 @@ Every option can be passed to the Form Redux's `Field` component and will be pro
 
 # Contribute
 
-Have any improvements, create a PR!
-
-Bugs? Create a new issue.
+Do you want to contribute by creating bugs, fixing them or adding new features? Read the [instructions](CONTRIBUTING.md)
