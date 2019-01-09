@@ -26,14 +26,14 @@ export default class Checkboxes extends React.Component {
     };
 
     getLabelAndValue(option) {
-        const {textField, valueField} = this.props;
+        const {labelField, valueField} = this.props;
 
         if (typeof option === 'string') {
             return {label: option, value: option};
         }
 
         return {
-            label: option[textField],
+            label: option[labelField],
             value: option[valueField]
         };
     }
@@ -73,11 +73,11 @@ Checkboxes.propTypes = {
         PropTypes.arrayOf(PropTypes.string)
     ]).isRequired,
     itemComponent: PropTypes.func,
-    textField: PropTypes.string,
+    labelField: PropTypes.string,
     valueField: PropTypes.string
 };
 
 Checkboxes.defaultProps = {
-    textField: 'label',
+    labelField: 'label',
     valueField: 'value'
 };
