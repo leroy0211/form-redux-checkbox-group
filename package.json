@@ -1,6 +1,6 @@
 {
   "name": "react-form-checkbox",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Checkboxes handled with React",
   "main": "build/index.js",
   "scripts": {
